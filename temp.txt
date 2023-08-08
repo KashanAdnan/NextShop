@@ -1,0 +1,165 @@
+
+
+
+    <nav class="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://www.next.co.uk/static-content/icons/header/next/v1/vision/new-next-black-logo.svg"
+                    alt="">
+                <h1>NextShop</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="index.html">Shop Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-cart-signin">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="search" placeholder="Search">
+            </div>
+            <div class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="shopping-bag">
+                    <path fill="#fff"
+                        d="M19,7H16V6A4,4,0,0,0,8,6V7H5A1,1,0,0,0,4,8V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V8A1,1,0,0,0,19,7ZM10,6a2,2,0,0,1,4,0V7H10Zm8,13a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V9H8v1a1,1,0,0,0,2,0V9h4v1a1,1,0,0,0,2,0V9h2Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="signin">
+                <span>Hello,</span>
+                <a href="./pages/login/index.html">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+    nav.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262d3e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  padding: 15px 60px;
+}
+
+nav.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+nav.navbar .logo img {
+  width: 35px;
+  margin-right: 4px;
+}
+
+nav.navbar .links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+nav.navbar .links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  word-spacing: 4px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+nav.navbar .links ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  word-spacing: 4px;
+  font-size: 14px;
+  background-color: #ffffff35;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar .links ul li a.active {
+  background-color: #111827;
+}
+.navbar .links ul li a.active:hover {
+  background-color: #111827;
+}
+
+.navbar .search {
+  padding: 10px;
+  background-color: #374151;
+  border-radius: 5px;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.search input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  margin-left: 10px;
+  width: 100%;
+  outline: none;
+}
+
+.search input::placeholder {
+  color: #777f8d;
+}
+
+.search i {
+  color: #777f8d;
+}
+
+.navbar .cart svg {
+  width: 30px;
+}
+
+.signin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signin span {
+  color: #9297a1;
+  font-size: 17px;
+}
+
+.signin a {
+  text-decoration: none;
+  color: #e9eaec;
+}
+
+.search-cart-signin {
+  display: flex;
+  width: 490px;
+  align-items: center;
+  justify-content: space-between;
+}
