@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262d3e;
+    color: #fff;
+    padding: 20px 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+}
+
+nav.navbar .logo img {
+    width: 33px;
+    margin-right: 5px;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+nav.navbar .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav.navbar .links ul li a {
+    text-decoration: none;
+    color: #c8ccd3;
+    font-size: 14px;
+    font-weight: 700;
+    word-spacing: 2px;
+    margin-left: 14px;
+    padding: 10px 14px;
+    border-radius: 7px;
+}
+
+nav.navbar .links ul li a:hover {
+    text-decoration: none;
+    color: #f7f7f7;
+    background-color: #ffffff35;
+}
+
+.navbar .links ul li a.active {
+    background-color: #111827;
+    color: #f7f7f7;
+}
+
+.navbar .links ul li a.active:hover {
+    background-color: #111827;
+}
+
+.navbar .search {
+    padding: 10px 12px;
+    background-color: #374151;
+    border-radius: 5px;
+    display: flex;
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: #777f8d;
+}
+
+.search i {
+    color: #767e8c;
+}
+
+.navbar .cart svg {
+    width: 25px;
+}
+
+.signin {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signin span {
+    color: #d1d5db;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.signin a {
+    text-decoration: none;
+    color: #e9eaec;
+    font-weight: 600;
+}
+
+.search-cart-signin {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Login Container */
+
+.login-container,
+.signUp-container {
+    width: 100%;
+    padding: 90px 0 0 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signUp-container {
+    display: none;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h1{
+    font-size: 30px;
+}
+.heading p {
+    margin-top: 5px;
+}
+
+.heading span {
+    cursor: pointer;
+    color: #4f46e5;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.form-container .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container .input-label {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-label label {
+    margin-top: 10px;
+}
+
+.input-label input {
+    width: 100%;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-container button {
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #4f46e5;
+    color: #fff;
+    border: 1px solid #4f46e5;
+    border-radius: 5px;
+    font-size: 15px;
+}

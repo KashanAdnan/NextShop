@@ -163,3 +163,6 @@ nav.navbar .links ul li a:hover {
   align-items: center;
   justify-content: space-between;
 }
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./script.mjs"></script>
