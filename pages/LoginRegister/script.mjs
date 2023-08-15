@@ -1,17 +1,18 @@
 import { db, auth, app } from "../../firebase/config.mjs";
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import { createUserWithEmailAndPassword , signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 import {
   setDoc,
   doc,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
-function showSignUp() {
+document.getElementById("signup").addEventListener("click", () => {
   document.querySelector(".login-container").style.display = "none"
   document.querySelector(".signUp-container").style.display = "flex"
-}
-function showLogin() {
+})
+document.querySelector(".login-s").addEventListener("click", () => {
   document.querySelector(".login-container").style.display = "flex"
   document.querySelector(".signUp-container").style.display = "none"
 }
+)
 
 
 const form = document.querySelector(".signup");
@@ -45,6 +46,16 @@ form.addEventListener("submit", async (ev) => {
     }
   }
 });
+const loginForm = document.querySelector(".login");
 
-window.showSignUp = showSignUp
-window.showLogin = showLogin
+loginForm.addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const email = document.querySelector("#email").value;
+  const password = document.querySelector("#password").value;
+  const data = await signInWithEmailAndPassword(auth, email, password);
+  if (data) {
+    Swal.fire("Good job!", "Sign Up Succesfull!", "success").then(() => {
+      window.location.href = "../../index.html"
+    })
+  }
+});

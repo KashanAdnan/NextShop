@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+body {
+  background-color: #f3f4f6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -215,10 +219,9 @@ main.main-section {
   align-items: flex-start;
   flex-direction: column;
   padding: 70px 40px;
-  background-color: #f3f4f6;
 }
 
-.category h3{
+.category h3 {
   margin-left: 70px;
   font-size: 23px;
   color: #111827;
@@ -253,57 +256,140 @@ main.main-section {
 }
 
 .category-1 {
-  background-image:
-    linear-gradient(to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.4)),
-    url("./img/hoodies.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../img/hoodies.webp");
 }
 
 .category-2 {
   background-image:
     linear-gradient(to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.4)),
-    url("./img/t-shirts.webp");
+      rgba(0, 0, 0, 0.3)),
+    url("../img/t-shirts.webp");
 }
 
 .category-3 {
   background-image:
     linear-gradient(to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.4)),
-    url("./img/jackets.webp");
+      rgba(0, 0, 0, 0.3)),
+    url("../img/jackets.webp");
 }
 
 .category-4 {
   background-image:
     linear-gradient(to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.4)),
-    url("./img/trouser.webp");
+      rgba(0, 0, 0, 0.3)),
+    url("../img/trouser.webp");
 }
 
-.category-1:hover {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("./img/hoodies.webp");
+
+/* Arrival Product */
+
+.arrival {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 100px;
 }
 
-.category-2:hover {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("./img/t-shirts.webp");
+.heading-col-space {
+  width: 100%;
+  display: flex;
+  padding: 0 0 15px 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.category-3:hover {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("./img/jackets.webp");
+.heading-col-space h1 {
+  font-size: 23px;
+  color: #111827;
 }
 
-.category-4:hover {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("./img/trouser.webp");
+.heading-col-space a {
+  color: #777af2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-section {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.product-section .product-card {
+  width: 267px;
+  margin-right: 20px;
+  margin-bottom: 70px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 450px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.product-card img:hover {
+  filter: brightness(0.9);
+}
+
+.product-card p {
+  color: #898f99;
+  font-size: 15px;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+}
+
+.product-card h3 {
+  color: #434854;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.product-card .icons {
+  display: flex;
+  cursor: pointer;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 10px 0;
+}
+
+.icons i {
+  color: #6366f1;
+  font-size: 15px;
+  margin-right: 2px;
+}
+
+.product-card button {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  border-radius: 7px;
+  border: none;
+  color: #1c2331;
+  font-family: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Footer Section  */
+
+footer {
+  width: 100%;
+  background-color: #1f2937;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 18px;
+  padding: 20px 50px;
+  color: #fff;
 }

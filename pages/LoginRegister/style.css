@@ -131,6 +131,7 @@ nav.navbar .links ul li a:hover {
     text-decoration: none;
     color: #e9eaec;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .search-cart-signin {
